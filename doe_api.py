@@ -1,1 +1,0 @@
-doe_key = "JDuKpLdLwsrj9KtBnuuJNeGiHkSa1e5NWWz8z0mb"
