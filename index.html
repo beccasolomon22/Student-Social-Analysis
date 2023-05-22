@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diversity Representation in Univeristies of the US</title>
+      <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin="" />
+
+<!-- Our CSS -->
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Diveristy Representation in Univeristies of the US</h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+              <div class="well">
+                <h5>Race/Ethnicity:</h5>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Demographic Info</h3>
+                </div>
+                <div id="" class="panel-body"></div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div id="bar"></div>
+            </div>
+            <div class="col-md-5">
+              <div id="gauge"></div>
+            </div>
+          </div>
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="visualMapping.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="visualMapping.js"></script>
+    <script src="./static/js/bonus.js"></script>
+</body>
+
+</html>
