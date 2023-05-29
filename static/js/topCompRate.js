@@ -1,6 +1,6 @@
 function init() {
 
-  let textName = ['top', 'twenty-five', 'schools', 'for', 'selected', 'ethnicity', 'completion', 'rate', 'go', 'here'];
+  let textName = ['top', 'one hundred', 'schools', 'for', 'selected', 'ethnicity', 'completion', 'rate', 'go', 'here'];
   let textNum = [1, .9, .8, .7, .6, .5, .4, .3, .2, .1];
 
   var topHundredPlot = [{

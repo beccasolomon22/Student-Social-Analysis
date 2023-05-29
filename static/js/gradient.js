@@ -19,7 +19,3 @@ var granimInstance = new Granim({
   }
 });
 
-
-
-
-
