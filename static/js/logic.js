@@ -10,7 +10,7 @@ let topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 // Create the map with base layers
 let myMap = L.map("map", {
   center: [37.09, -95.71],
-  zoom: 3,
+  zoom: 5,
   layers: [street, topo]
 });
 
@@ -167,17 +167,17 @@ d3.json("coords.json").then(function (data) {
     return feature.properties["faculty demographic (black)"] > 0;
   });
 
-    // Function to style the features (BLACK - Mustard Yellow)
-    function styleInfo4(feature) {
-      return {
-        opacity: 4,
-        fillOpacity: 0.5,
-        fillColor: '#FFB157',
-        radius: getRadius(feature.properties),
-        stroke: true,
-        weight: 0.1
-      };
-    }
+  // Function to style the features (BLACK - Mustard Yellow)
+  function styleInfo4(feature) {
+    return {
+      opacity: 4,
+      fillOpacity: 0.5,
+      fillColor: '#FFB157',
+      radius: getRadius(feature.properties),
+      stroke: true,
+      weight: 0.1
+    };
+  }
 
   // Create the GeoJSON layer for "Black" ethnicity
   L.geoJson(blackData, {
@@ -209,17 +209,17 @@ d3.json("coords.json").then(function (data) {
     return feature.properties["faculty demographic (hawaiian or pacific islander)"] > 0;
   });
 
-    // Function to style the features (HAWAIIAN/PI - Light Green)
-    function styleInfo6(feature) {
-      return {
-        opacity: 4,
-        fillOpacity: 0.5,
-        fillColor: '#C3E76F',
-        radius: getRadius(feature.properties),
-        stroke: true,
-        weight: 0.1
-      };
-    }
+  // Function to style the features (HAWAIIAN/PI - Light Green)
+  function styleInfo6(feature) {
+    return {
+      opacity: 4,
+      fillOpacity: 0.5,
+      fillColor: '#C3E76F',
+      radius: getRadius(feature.properties),
+      stroke: true,
+      weight: 0.1
+    };
+  }
 
   // Create the GeoJSON layer for "Hawaiian" ethnicity
   L.geoJson(hpacData, {
@@ -245,24 +245,24 @@ d3.json("coords.json").then(function (data) {
   hpac.addTo(myMap);
 
 
-///// FOR HISPANIC STUDENTS
+  ///// FOR HISPANIC STUDENTS
 
-// Filter the data for "Hispanic" ethnicity
+  // Filter the data for "Hispanic" ethnicity
   let hispanicData = data.features.filter(function (feature) {
-  return feature.properties["faculty demographic (hispanic)"] > 0;
+    return feature.properties["faculty demographic (hispanic)"] > 0;
   });
 
-    // Function to style the features (HISPANIC - Sea Green)
-    function styleInfo7(feature) {
-      return {
-        opacity: 4,
-        fillOpacity: 0.5,
-        fillColor: '#6BA29C',
-        radius: getRadius(feature.properties),
-        stroke: true,
-        weight: 0.1
-      };
-    }
+  // Function to style the features (HISPANIC - Sea Green)
+  function styleInfo7(feature) {
+    return {
+      opacity: 4,
+      fillOpacity: 0.5,
+      fillColor: '#6BA29C',
+      radius: getRadius(feature.properties),
+      stroke: true,
+      weight: 0.1
+    };
+  }
 
   // Create the GeoJSON layer for "Hispanic" ethnicity
   L.geoJson(hispanicData, {
@@ -288,6 +288,43 @@ d3.json("coords.json").then(function (data) {
 
   // Add the "Hispanic" ethnicity layer to the map
   hispanic.addTo(myMap);
+
+
+  /////// ADDING THE LEGEND!!!
+
+  // Adding the actual legend on the page
+  let legend = L.control({
+    position: "bottomright"
+  });
+
+  legend.onAdd = function () {
+    let div = L.DomUtil.create("div", "info legend");
+
+    //each ethnicity corresponds to the colors in the colors array
+    
+    const magnitudes = ["Asian", "White", "American Indian", "Black", "Hawaiian/Pacific Islander", "Hispanic"];
+
+    const colors = [
+      "#D6BDE1",
+      "#F4998D",
+      "#BAC0FC",
+      "#FFB157",
+      "#C3E76F",
+      "#6BA29C"
+    ];
+
+    // Looping through our intervals to generate a label with a colored square for each interval.
+    for (var i = 0; i < magnitudes.length; i++) {
+      console.log(colors[i]);
+      div.innerHTML += "<i style='background: " + colors[i] + "'></i> " + magnitudes[i] + "<br>";
+    }
+    return div;
+  };
+
+  // Finally, we our legend to the map.
+  legend.addTo(myMap);
+
+
 });
 
 
