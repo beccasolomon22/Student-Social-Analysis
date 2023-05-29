@@ -21,7 +21,6 @@ let aian = new L.LayerGroup();
 let hpac = new L.LayerGroup();
 let hispanic = new L.LayerGroup();
 let black = new L.LayerGroup();
-let twomore = new L.LayerGroup();
 
 // Create the overlay maps with ethnicity layers
 let overlayMaps = {
@@ -31,7 +30,6 @@ let overlayMaps = {
   "Hawaiian/Pacific Islander": hpac,
   "Hispanic": hispanic,
   "Black": black,
-  "2 or more races": twomore
 };
 
 // Add layer control to the map
@@ -75,17 +73,17 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (asian)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (Asian): " +
+        feature.properties["faculty demographic (asian)"] +
+        "<br>Completion rate for 4 years (Asian): " +
+        feature.properties["completion rate in 4 years (asian)"]
       );
     }
   }).addTo(asian); // Add the layer to "Asian" initially
 
   // Filter the data for "White" ethnicity
   let whiteData = data.features.filter(function (feature) {
-    return feature.properties["compl rate for 4y (white)"] > 0;
+    return feature.properties["faculty demographic (white)"] > 0;
   });
 
 
@@ -113,10 +111,10 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (white)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (White): " +
+        feature.properties["faculty demographic (white)"] +
+        "<br>Completion rate for 4 years (White): " +
+        feature.properties["completion rate in 4 years (white)"]
       );
     }
   }).addTo(white); // Add the layer to "White" ethnicity
@@ -126,7 +124,7 @@ d3.json("coords.json").then(function (data) {
 
   // Filter the data for "American Indian" ethnicity
   let aianData = data.features.filter(function (feature) {
-    return feature.properties["compl rate for 4y (american indian)"] > 0;
+    return feature.properties["faculty demographic (american indian)"] > 0;
   });
 
   // Function to style the features (AMERICAN INDIAN - Periwinkle)
@@ -153,10 +151,10 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (american indian)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (American Indian): " +
+        feature.properties["faculty demographic (american indian)"] +
+        "<br>Completion rate in 4 years (American Indian): " +
+        feature.properties["completion rate in 4 years (american indian)"]
       );
     }
   }).addTo(aian); // Add the layer to "American Indian" ethnicity
@@ -166,7 +164,7 @@ d3.json("coords.json").then(function (data) {
 
   // Filter the data for "Black" ethnicity
   let blackData = data.features.filter(function (feature) {
-    return feature.properties["compl rate for 4y (black)"] > 0;
+    return feature.properties["faculty demographic (black)"] > 0;
   });
 
     // Function to style the features (BLACK - Mustard Yellow)
@@ -193,10 +191,10 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (black)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (Black): " +
+        feature.properties["faculty demographic (black)"] +
+        "<br>Completion rate in 4 years (Black): " +
+        feature.properties["completion rate in 4 years (black)"]
       );
     }
   }).addTo(black); // Add the layer to "Black" ethnicity
@@ -204,50 +202,11 @@ d3.json("coords.json").then(function (data) {
   // Add the "Black" ethnicity layer to the map
   black.addTo(myMap);
 
-  // Filter the data for "Two or More" ethnicity
-  let twomoreData = data.features.filter(function (feature) {
-    return feature.properties["compl rate for 4y (2 or more races)"] > 0;
-  });
-
-       // Function to style the features (TWO OR MORE - Pink)
-       function styleInfo5(feature) {
-        return {
-          opacity: 4,
-          fillOpacity: 0.5,
-          fillColor: '#FF57B1',
-          radius: getRadius(feature.properties),
-          stroke: true,
-          weight: 0.1
-        };
-      }
-  // Create the GeoJSON layer for "Two or More" ethnicity
-  L.geoJson(twomoreData, {
-    pointToLayer: function (feature, latlng) {
-      return L.circleMarker(latlng);
-    },
-
-    style: styleInfo5,
-
-    onEachFeature: function (feature, layer) {
-      layer.bindPopup(
-        "School Name: " +
-        feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (2 or more races)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
-      );
-    }
-  }).addTo(twomore); // Add the layer to "Two or More" ethnicity
-
-  // Add the "Two or More" ethnicity layer to the map
-  twomore.addTo(myMap);
-
   // FOR HAWAIIAN AND PAC ISLANDERS
 
   // Filter the data for "Hawaiian/Pacific Islanders" ethnicity
   let hpacData = data.features.filter(function (feature) {
-    return feature.properties["compl rate for 4y (hawaiian/pac islander)"] > 0;
+    return feature.properties["faculty demographic (hawaiian or pacific islander)"] > 0;
   });
 
     // Function to style the features (HAWAIIAN/PI - Light Green)
@@ -274,10 +233,10 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (hawaiian/pac islander)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (Hawaiian/Pacific Islander): " +
+        feature.properties["faculty demographic (hawaiian or pacific islander)"] +
+        "<br>Completion rate in 4 years (Hawaiian/Pacific Islander): " +
+        feature.properties["completion rate in 4 years (hawaiian or pacific islander)"]
       );
     }
   }).addTo(hpac); // Add the layer to "Hawaiian" ethnicity
@@ -290,7 +249,7 @@ d3.json("coords.json").then(function (data) {
 
 // Filter the data for "Hispanic" ethnicity
   let hispanicData = data.features.filter(function (feature) {
-  return feature.properties["compl rate for 4y (hispanic)"] > 0;
+  return feature.properties["faculty demographic (hispanic)"] > 0;
   });
 
     // Function to style the features (HISPANIC - Sea Green)
@@ -319,10 +278,10 @@ d3.json("coords.json").then(function (data) {
       layer.bindPopup(
         "School Name: " +
         feature.properties["school name"] +
-        "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (hispanic)"] +
-        "<br>Average tuition cost (full-time student): " +
-        feature.properties["tuition revenue per full time enrollment"]
+        "<br>Faculty Demographic (Hispanic): " +
+        feature.properties["faculty demographic (hispanic)"] +
+        "<br>Completion rate for 4 years (Hispanic): " +
+        feature.properties["completion rate in 4 years (hispanic)"]
       );
     }
   }).addTo(hispanic); // Add the layer to "Hispanic" ethnicity
@@ -330,3 +289,8 @@ d3.json("coords.json").then(function (data) {
   // Add the "Hispanic" ethnicity layer to the map
   hispanic.addTo(myMap);
 });
+
+
+
+/////////////////////////
+/////////////////////////
