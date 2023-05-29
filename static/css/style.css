@@ -2,7 +2,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  height: 160%;
+  height: 300%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -21,8 +21,3 @@ html {
   height: 100%;
 }
 
-/* #plot,
-body,
-html {
-  height: 100%;
-} */

@@ -13,7 +13,11 @@ function init() {
     title: "Top 100 Schools with Highest Completion Rate For Selected Ethnicity",
     yaxis: {
       tickformat: ',.0%',
-      range: [0,1]
+      range: [0,1],
+      automargin: true
+    },
+    margin: {
+      b: 80 // Adjust the bottom margin value to prevent x-ticks from being cut off
     }
   }
 
@@ -73,6 +77,10 @@ let x = [];
 let y = [];
 
 let newTitle = "";
+
+let newMargin = {
+  b: 230 
+}
 
 if (dataset === 'White') {
   let descend = white.sort(function compareFunction(firstNum, secondNum) {
@@ -200,6 +208,7 @@ Plotly.restyle("plot", "x", [x]);
 Plotly.restyle("plot", "y", [y]);
 
 Plotly.relayout("plot", "title", newTitle);
+Plotly.relayout("plot", "margin", newMargin);
 }
 
 
