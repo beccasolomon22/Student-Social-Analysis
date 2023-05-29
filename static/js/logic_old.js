@@ -10,7 +10,7 @@ let topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 // Create the map with base layers
 let myMap = L.map("map", {
   center: [37.09, -95.71],
-  zoom: 5,
+  zoom: 3,
   layers: [street, topo]
 });
 
@@ -21,6 +21,7 @@ let aian1 = new L.LayerGroup();
 let hpac1 = new L.LayerGroup();
 let hispanic1 = new L.LayerGroup();
 let black1 = new L.LayerGroup();
+// let twomore1 = new L.LayerGroup();
 
 // Create the overlay maps with ethnicity layers
 let overlayMaps = {
@@ -29,7 +30,8 @@ let overlayMaps = {
   "American Indian": aian1,
   "Hawaiian/Pacific Islander": hpac1,
   "Hispanic": hispanic1,
-  "Black": black1,
+  "Black": black1
+  // "2 or more races": twomore1
 };
 
 // Add layer control to the map
@@ -38,7 +40,7 @@ L.control.layers({ "Street": street, "Topo": topo }, overlayMaps, {
 }).addTo(myMap);
 
 // Load the JSON data
-d3.json("coords.json").then(function (data) {
+d3.json("../data/student_demo.json").then(function (data) {
 
   // Function to get the radius based on magnitude
   function getRadius(magnitude) {
@@ -75,8 +77,8 @@ d3.json("coords.json").then(function (data) {
         feature.properties["school name"] +
         "<br>Faculty Demographic (Asian): " +
         feature.properties["faculty demographic (asian)"] +
-        "<br>Completion rate for 4 years (Asian): " +
-        feature.properties["completion rate in 4 years (asian)"]
+        "<br>Percentage completed at 4 yr university: " +
+        feature.properties["compl rate for 4y (asian)"] 
       );
     }
   }).addTo(asian1); // Add the layer to "Asian" initially
@@ -113,8 +115,8 @@ d3.json("coords.json").then(function (data) {
         feature.properties["school name"] +
         "<br>Faculty Demographic (White): " +
         feature.properties["faculty demographic (white)"] +
-        "<br>Completion rate for 4 years (White): " +
-        feature.properties["completion rate in 4 years (white)"]
+        "<br>Percentage completed at 4 yr university: " +
+        feature.properties["compl rate for 4y (white)"] 
       );
     }
   }).addTo(white1); // Add the layer to "White" ethnicity
@@ -167,17 +169,17 @@ d3.json("coords.json").then(function (data) {
     return feature.properties["faculty demographic (black)"] > 0;
   });
 
-  // Function to style the features (BLACK - Mustard Yellow)
-  function styleInfo4(feature) {
-    return {
-      opacity: 4,
-      fillOpacity: 0.5,
-      fillColor: '#FFB157',
-      radius: getRadius(feature.properties),
-      stroke: true,
-      weight: 0.1
-    };
-  }
+    // Function to style the features (BLACK - Mustard Yellow)
+    function styleInfo4(feature) {
+      return {
+        opacity: 4,
+        fillOpacity: 0.5,
+        fillColor: '#FFB157',
+        radius: getRadius(feature.properties),
+        stroke: true,
+        weight: 0.1
+      };
+    }
 
   // Create the GeoJSON layer for "Black" ethnicity
   L.geoJson(blackData, {
@@ -202,6 +204,45 @@ d3.json("coords.json").then(function (data) {
   // Add the "Black" ethnicity layer to the map
   black1.addTo(myMap);
 
+  // Filter the data for "Two or More" ethnicity
+  let twomoreData = data.features.filter(function (feature) {
+    return feature.properties["faculty demographic (hawaiian or pacific islander)"] > 0;
+  });
+
+       // Function to style the features (TWO OR MORE - Pink)
+       function styleInfo5(feature) {
+        return {
+          opacity: 4,
+          fillOpacity: 0.5,
+          fillColor: '#FF57B1',
+          radius: getRadius(feature.properties),
+          stroke: true,
+          weight: 0.1
+        };
+      }
+  // Create the GeoJSON layer for "Two or More" ethnicity
+  // L.geoJson(twomoreData, {
+  //   pointToLayer: function (feature, latlng) {
+  //     return L.circleMarker(latlng);
+  //   },
+
+  //   style: styleInfo5,
+
+  //   onEachFeature: function (feature, layer) {
+  //     layer.bindPopup(
+  //       "School Name: " +
+  //       feature.properties["school name"] +
+  //       "<br>Percentage completed at 4 yr university: " +
+  //       feature.properties["compl rate for 4y (2 or more races)"] +
+  //       "<br>Average tuition cost (full-time student): " +
+  //       feature.properties["tuition revenue per full time enrollment"]
+  //     );
+  //   }
+  // }).addTo(twomore1); // Add the layer to "Two or More" ethnicity
+
+  // // Add the "Two or More" ethnicity layer to the map
+  // twomore1.addTo(myMap);
+
   // FOR HAWAIIAN AND PAC ISLANDERS
 
   // Filter the data for "Hawaiian/Pacific Islanders" ethnicity
@@ -209,17 +250,17 @@ d3.json("coords.json").then(function (data) {
     return feature.properties["faculty demographic (hawaiian or pacific islander)"] > 0;
   });
 
-  // Function to style the features (HAWAIIAN/PI - Light Green)
-  function styleInfo6(feature) {
-    return {
-      opacity: 4,
-      fillOpacity: 0.5,
-      fillColor: '#C3E76F',
-      radius: getRadius(feature.properties),
-      stroke: true,
-      weight: 0.1
-    };
-  }
+    // Function to style the features (HAWAIIAN/PI - Light Green)
+    function styleInfo6(feature) {
+      return {
+        opacity: 4,
+        fillOpacity: 0.5,
+        fillColor: '#C3E76F',
+        radius: getRadius(feature.properties),
+        stroke: true,
+        weight: 0.1
+      };
+    }
 
   // Create the GeoJSON layer for "Hawaiian" ethnicity
   L.geoJson(hpacData, {
@@ -245,24 +286,24 @@ d3.json("coords.json").then(function (data) {
   hpac1.addTo(myMap);
 
 
-  ///// FOR HISPANIC STUDENTS
+///// FOR HISPANIC STUDENTS
 
-  // Filter the data for "Hispanic" ethnicity
+// Filter the data for "Hispanic" ethnicity
   let hispanicData = data.features.filter(function (feature) {
-    return feature.properties["faculty demographic (hispanic)"] > 0;
+  return feature.properties["faculty demographic (hispanic)"] > 0;
   });
 
-  // Function to style the features (HISPANIC - Sea Green)
-  function styleInfo7(feature) {
-    return {
-      opacity: 4,
-      fillOpacity: 0.5,
-      fillColor: '#6BA29C',
-      radius: getRadius(feature.properties),
-      stroke: true,
-      weight: 0.1
-    };
-  }
+    // Function to style the features (HISPANIC - Sea Green)
+    function styleInfo7(feature) {
+      return {
+        opacity: 4,
+        fillOpacity: 0.5,
+        fillColor: '#6BA29C',
+        radius: getRadius(feature.properties),
+        stroke: true,
+        weight: 0.1
+      };
+    }
 
   // Create the GeoJSON layer for "Hispanic" ethnicity
   L.geoJson(hispanicData, {
@@ -289,8 +330,7 @@ d3.json("coords.json").then(function (data) {
   // Add the "Hispanic" ethnicity layer to the map
   hispanic1.addTo(myMap);
 
-
-  /////// ADDING THE LEGEND!!!
+ /////// ADDING THE LEGEND!!!
 
   // Adding the actual legend on the page
   let legend = L.control({
@@ -326,8 +366,3 @@ d3.json("coords.json").then(function (data) {
 
 
 });
-
-
-
-/////////////////////////
-/////////////////////////
