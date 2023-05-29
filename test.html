@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>US University Statistics (latest)</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+  
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+</head>
+
+<body>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+    .navy-jumbotron {
+      background-color: rgb(120, 159, 231);
+      min-width: 1400px;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center navy-jumbotron mx-auto">
+        <style>
+          .navy-jumbotron {
+            background-color: rgb(120, 159, 231);
+            min-width: 1400px;
+          }
+          
+        </style>
+        <h1>US University Statistics (latest)</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 jumbotron text-center navy-jumbotron" >
+        <style>
+          .navy-jumbotron {
+            background-color: rgb(120, 159, 231);
+          }
+        </style>
+        <h2>Map of US Universities Based Attendance of Selected Ethnicity</h1>
+        <p>Select an option from the menu to the right.</p>
+        <div id="map" style="height: 500px; width: 1300px;"></div>
+        
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+          integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+          crossorigin=""></script>
+        <!-- Our JavaScript -->
+        <script type="text/javascript" src="static/js/logic_old.js"></script>
+      </div>
+    </div>
+  </div>
+  <h1></h1>
+  <h1></h1>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 jumbotron text-center navy-jumbotron">
+        <style>
+          .navy-jumbotron {
+            background-color: rgb(120, 159, 231);
+            
+          }
+        </style>
+        <h2>Top 100 Universities Based on Completion Rate of Selected Ethnicity</h2> <!-- Corrected closing tag to </h2> -->
+        <p>Select an option from the drop-down menu below.</p>
+        <div id="plot" style="height: 700px; width: 1300px;"></div>
+        
+        <select id="selDataset">
+          <option value="example">example</option>
+          <option value="White">White</option>
+          <option value="Two or More Races">Two or More Races</option>
+          <option value="Hawaiian/Pacific Islander">Hawaiian/Pacific Islander</option>
+          <option value="Hispanic">Hispanic</option>
+          <option value="Black">Black</option>
+          <option value="Asian">Asian</option>
+          <option value="American Indian">American Indian</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <h1></h1>
+  <h1></h1>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 jumbotron text-center navy-jumbotron">
+        <style>
+          .navy-jumbotron {
+            background-color: rgb(120, 159, 231);
+            
+          }
+        </style>
+        <h2>Withdrawal Rate and Median Debt Between Male and Female Students</h1>
+        <p>Select an option from the drop-down menu below.</p>    
+        <div id="plot2" style="height: 700px; width: 1300px;"></div>
+
+        <select id="selDataset2">
+          <option value="example">example</option>
+          <option value="Withdrawal by 2 years (Male)">Withdrawal by 2 years (Male)</option>
+          <option value="Withdrawal by 3 years (Male)">Withdrawal by 3 years (Male)</option>
+          <option value="Withdrawal by 2 years (Female)">Withdrawal by 2 years (Female)</option>
+          <option value="Withdrawal by 3 years (Female)">Withdrawal by 3 years (Female)</option>
+          <option value="Median Debt (Male)">Median Debt (Male)</option>
+          <option value="Median Debt (Female)">Median Debt (Female)</option>
+        </select>
+        
+      </div>
+    </div>
+  </div>
+
+  <canvas id="canvas-complex"></canvas>
+  <script src="./static/js/gradient.js"></script>
+  <script src="./static/js/student_sex.js"></script>
+  <script src="./static/js/topCompRate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
