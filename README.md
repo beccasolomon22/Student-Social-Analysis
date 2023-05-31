@@ -46,19 +46,19 @@ We found variations in graduation rates across different gender and ethnic group
  
 #### Graduation Rate Per Ethnicity VS Faculty Demographic
 
-![stu_fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_white.png)
+![stu_fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_white.png)  ![stu_white fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_white_fac_white.png)
 
-![stu_fac_2](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_2.png)
+![stu_fac_2](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_2.png)   ![stu_2 fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_2_fac_white.png)
 
-![stu_fac_hapac](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_hp.png)
+![stu_fac_hapac](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_hp.png)  ![stu hapac fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_hapac_fac_white.png)
 
-![stu_fac_his](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_his.png)
+![stu_fac_his](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_his.png)   ![stu his fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_his_fac_white.png)
 
-![stu_fac_black](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_black.png)
+![stu_fac_black](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_black.png)   ![stu black fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_black_fac_white.png)
 
-![stu_fac_asian](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_asian.png)
+![stu_fac_asian](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_asian.png)   ![stu asian fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_asian_fac_white.png)
 
-![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png)
+![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png)   ![stu ai fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_ai_fac_white.png)
 
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among different gender and ethnic groups, which can indicate barriers or difficulties faced by specific demographics.
