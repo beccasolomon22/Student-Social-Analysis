@@ -104,7 +104,11 @@ Remaining questions:
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among female vs male students, which can indicate barriers or difficulties faced by specific demographics. With 57% of our college students being female and 43% male, we wanted to see if this difference in attendance would have a similar difference in withdrawal rates. Since females are higher population in schools, would they also have a higher withdrawal rate. However our findings indicated the opposite. 
 
-![
+Withdrawal Rates after 2 years:
+![Withdrawal Rates 2 years](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/withdrawal_2years.png)
+
+Withdrawal Rates after 3 years:
+![Withdrawal Rates 2 years](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/withdrawal_3years.png)
 
 
 
