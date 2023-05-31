@@ -78,7 +78,7 @@ d3.json("../data/student_demo.json").then(function (data) {
         "<br>Faculty Demographic (Asian): " +
         feature.properties["faculty demographic (asian)"] +
         "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (asian)"] 
+        feature.properties["completion rate in 4 years (asian)"] 
       );
     }
   }).addTo(asian1); // Add the layer to "Asian" initially
@@ -116,7 +116,7 @@ d3.json("../data/student_demo.json").then(function (data) {
         "<br>Faculty Demographic (White): " +
         feature.properties["faculty demographic (white)"] +
         "<br>Percentage completed at 4 yr university: " +
-        feature.properties["compl rate for 4y (white)"] 
+        feature.properties["completion rate in 4 years (white)"] 
       );
     }
   }).addTo(white1); // Add the layer to "White" ethnicity
