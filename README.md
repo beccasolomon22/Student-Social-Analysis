@@ -114,9 +114,18 @@ However, when we take a look at withdrawal rates in the third year of college, w
 Withdrawal Rates after 3 years:
 ![Withdrawal Rates 2 years](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/withdrawal_3years.png)
 
+These trends we see from the data we pulled from the US Department of Education confirms the information gathered from other sources that reports an average completion rate for Females at 66.4% and Males at 60.4%.
+
+Remaining Questions:
+1. Are there any quantifiable aspects that lead to this difference in withdrawal/completion rates for Males and Females? 
 
 
 ## Conclusion
+
+* There’s more representation within the white ethnicity in both students and faculty members in universities, despite Asians having the highest 4-year completion rate.
+* Women account for majority of the student population and have a lower withdrawal rate.
+* There are less students who receive Pell grants in universities with majority white faculty members.
+
 By investigating graduation and withdrawal rates by gender and ethnicity, this project offers valuable insights into the social impacts on college students in the United States. These findings can contribute to ongoing efforts to address disparities and promote inclusive practices within higher education institutions. It is our hope that this research will inform policymakers, educators, and researchers in their endeavors to create a more equitable educational landscape.
 
 ## Acknowledgements
