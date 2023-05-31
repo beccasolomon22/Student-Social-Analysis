@@ -89,4 +89,15 @@ We welcome contributions and collaborations to expand the scope of this project 
 We utilized the US Department of Education's API to access a comprehensive dataset on college students' outcomes. This API provides detailed information on graduation rates, withdrawal rates, as well as demographic data for students across various universities in the United States. Additional research was gathered from other sources.
 
 ### Links
-[]()
+[The Impact of White Teachers on the Academic Achievement of Black Students](https://files.eric.ed.gov/fulltext/EJ839497.pdf)
+[More student or faculty diversity on campus leads to lower racial gaps in graduation rates](https://theconversation.com/more-student-or-faculty-diversity-on-campus-leads-to-lower-racial-gaps-in-graduation-rates-181924)
+[Demographic trends and economic well-being](https://www.pewresearch.org/social-trends/2016/06/27/1-demographic-trends-and-economic-well-being/)
+[Income and Wealth in the United States: An Overview of Recent Data](https://www.pgpf.org/blog/2023/02/income-and-wealth-in-the-united-states-an-overview-of-recent-data)
+[The importance of a diverse teaching force](https://www.brookings.edu/research/the-importance-of-a-diverse-teaching-force/)
+[Race/ethnicity of college faculty](https://nces.ed.gov/fastfacts/display.asp?id=61)
+[Consider Faculty Diversity When Applying to College](https://www.usnews.com/education/best-colleges/articles/consider-faculty-diversity-when-applying-to-college#:~:text=The%20majority%20of%20full%2Dtime,time%20U.S.%20faculty%20were%20white.)
+[College Dropout Rates: 2023 Statistics by Race, Gender & Income](https://research.com/universities-colleges/college-dropout-rates)
+[The Significant Gender Gap in College Graduation Rates](https://www.wiareport.com/2022/11/the-significant-gender-gap-in-college-graduation-rates/#:~:text=Some%2066.4%20percent%20of%20all,for%2Dprofit%20colleges%20and%20universities)
+[Status and Trends in the Education of Racial and Ethnic Groups](https://nces.ed.gov/programs/raceindicators/indicator_red.asp)
+[Diversity in Higher Education: Facts and Statistics](https://www.bestcolleges.com/research/diversity-in-higher-education-facts-statistics/#fn-1)
+[Visualizing the U.S. Population by Race](https://www.visualcapitalist.com/visualizing-u-s-population-by-race/)
