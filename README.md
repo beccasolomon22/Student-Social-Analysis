@@ -43,7 +43,11 @@ Our analysis revealed several significant findings:
 
 ### Graduation Rates:
 We found variations in graduation rates across different gender and ethnic groups. These differences provide insights into the challenges and successes experienced by various student populations.
- 
+
+First, we took at the overall graduation rates on average for all universities. What we found is that despite university population being majority students of white(non-hispanic) ethnicity, students of asian ethnicity have the highest graduation rates.
+
+![avg grad rates](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_compl_rate.png) 
+
 #### Graduation Rate Per Ethnicity VS Faculty Demographic
 Same Ethnicity for Both Students and Faculty          |   Students of all Ethnities with Just White Faculty Demographic
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
