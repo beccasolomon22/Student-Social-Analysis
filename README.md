@@ -1,4 +1,9 @@
-# Student Social Analysis
+# Social Impacts on College Students: 
+## With Special Focus on:
+1. Graduation and Withdrawal Rates by Gender and Ethnicity
+2. Faculty Demographics
+3. Financial Aid
+
 ## Information gathered from the US Department of Education API
 
 Collaborators: Sabrina Fernandez, Brennan Copp, Rebecca Solomon
