@@ -41,7 +41,7 @@ Higher education plays a crucial role in shaping individuals' lives and can have
 ## Findings
 Our analysis revealed several significant findings:
 
-### Graduation Rates:
+### Graduation Rates/Faculty Demographics:
 We found variations in graduation rates across different gender and ethnic groups. These differences provide insights into the challenges and successes experienced by various student populations.
 
 First, we took at the overall graduation rates on average for all universities. What we found is that despite university population being majority students of white(non-hispanic) ethnicity, students of asian or hawaiian/pacific islander ethnicity have the highest graduation rates.
@@ -73,6 +73,10 @@ From this discovery, we then took a look at comparing all student demographic gr
 These two discoveries then led us to looking further into Faculty Demographics because we wanted to understand why the first set of graphs leaned so far to either side. 
 
 ![avg faculty demo bar](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo.png)
+
+When we take a look at the average faculty demographics across all school in the dataset, we see that white faculty members make up about 67% of all school faculty, leaving just 33% from all other demographics (the highest being less than than 12% representation). While these numbers didn't necessarily surprise us, seeing the vast difference between them brought a whole new understanding, as well as more questions. 
+
+How does the respresentations of different demographics in schools compare to that of the US population as a whole?
 
 Faculty Demographics         |   US Population
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
