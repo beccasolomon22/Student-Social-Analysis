@@ -29,6 +29,8 @@ Higher education plays a crucial role in shaping individuals' lives and can have
     - Store data tables
     - Query from the Database
 
+
+
 ## Methodology
 ### Our analysis involved the following steps:
 
@@ -37,6 +39,8 @@ Higher education plays a crucial role in shaping individuals' lives and can have
 3. Exploratory Data Analysis: We conducted exploratory analysis to gain insights into the overall trends and patterns in graduation and withdrawal rates among different gender and ethnic groups.
 4. Statistical Analysis: We performed statistical tests and calculations to determine significant differences in graduation rates by student demographic and overall faculty diversity as well as withdrawal rates and average debt between gender groups.
 5. Visualization: The results were visualized using appropriate graphs, charts, and statistical visualizations to enhance understanding and interpretation.
+
+
 
 ## Findings
 Our analysis revealed several significant findings:
@@ -48,6 +52,9 @@ First, we took at the overall graduation rates on average for all universities. 
 
 ![avg grad rates](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_compl_rate.png) 
 
+The first comparisons we did were on the graduation rates of students compared to the representation of the same ethnicity in each school. The results we got were surprising. In every case there was not a significant correlation between the two values with all the r squared values being below .4. Along with this, the slopes of the linear regression lines vary between positive and negative across the board. However, despite these finding we did notice a trend. When it came to faculty demographics, white faculty demographics seem to be farther to the right (between 50-100% representation) whereas every other faculty demographic was far to the left (0-20% respresentation). 
+
+From this discovery, we then took a look at comparing all student demographic graduation rates to just the percentage of white faculty. Immediately we saw a change in the overall results. Even though there was not a significant statistical correlation, there was a more obvious downward trend in almost all the graphs. In almost every student demographic we see that the less white faculty the higher the graduation rates. The only cases where we don't see this trend are the student demographic groups that have much lower numbers.
 
 #### Graduation Rate Per Ethnicity VS Faculty Demographic
 Same Ethnicity for Both Students and Faculty          |   Students of all Ethnities with Just White Faculty Demographic
@@ -64,25 +71,29 @@ Same Ethnicity for Both Students and Faculty          |   Students of all Ethnit
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
 ![stu_fac_asian](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_asian.png) |  ![stu asian fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_asian_fac_white.png)
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
-![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png) |  ![stu ai fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_ai_fac_white.png)
-
-The first comparisons we did were on the graduation rates of students compared to the representation of the same ethnicity in each school. The results we got were surprising. In every case there was not a significant correlation between the two values with all the r squared values being below .4. Along with this, the slopes of the linear regression lines vary between positive and negative across the board. However, despite these finding we did notice a trend. When it came to faculty demographics, white faculty demographics seem to be farther to the right (between 50-100% representation) whereas every other faculty demographic was far to the left (0-20% respresentation). 
-
-From this discovery, we then took a look at comparing all student demographic graduation rates to just the percentage of white faculty. Immediately we saw a change in the overall results. Even though there was not a significant statistical correlation, there was a more obvious downward trend in almost all the graphs. In almost every student demographic we see that the less white faculty the higher the graduation rates. The only cases where we don't see this trend are the student demographic groups that have much lower numbers. 
+![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png) |  ![stu ai fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_ai_fac_white.png) 
 
 These two discoveries then led us to looking further into Faculty Demographics because we wanted to understand why the first set of graphs leaned so far to either side. 
 
-![avg faculty demo bar](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo.png)
-
 When we take a look at the average faculty demographics across all school in the dataset, we see that white faculty members make up about 67% of all school faculty, leaving just 33% from all other demographics (the highest being less than than 12% representation). While these numbers didn't necessarily surprise us, seeing the vast difference between them brought a whole new understanding, as well as more questions. 
 
-How does the respresentations of different demographics in schools compare to that of the US population as a whole?
+![avg faculty demo bar](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo.png)
+
+The main question we wanted to answer after seeing this result was: How does the respresentations of different demographics in schools compare to that of the US population as a whole?
 
 #### Faculty Demographics   VS   US Population
 ![faculty vs us](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/faculty_vs_us_pop.png)
 
+The representation of faculty members of white ethnicity is currently about 7% higher than that of the US Population. So while the US Population is made up of about 40% all other Demographics we only see about 33% representation of those Demographics in the College Education System. With the predicted trend of that 40% rising over the course of the next years to over 50%, it will be interesting to see if the representation in our colleges also follows that trend. 
+
+Remaining questions:
+1. Will the trend in our population's demographic growth result is a similar change in our faculty demographic representation?
+2. If so, will we see higher graduation rates for all demographics at a higher statistical significance?
+
+
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among different gender and ethnic groups, which can indicate barriers or difficulties faced by specific demographics.
+
 
 
 ## Conclusion
