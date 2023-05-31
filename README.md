@@ -104,8 +104,12 @@ Remaining questions:
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among female vs male students, which can indicate barriers or difficulties faced by specific demographics. With 57% of our college students being female and 43% male, we wanted to see if this difference in attendance would have a similar difference in withdrawal rates. Since females are higher population in schools, would they also have a higher withdrawal rate. However our findings indicated the opposite. 
 
+When we look at the 100 Universities that have the highest withdrawal rate in the second year of college for Males and Females, we see that males have a higher withdrawal rate across the board. 
+
 Withdrawal Rates after 2 years:
 ![Withdrawal Rates 2 years](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/withdrawal_2years.png)
+
+However, when we take a look at withdrawal rates in the third year of college, we see that the highest withdrawal rate is in the female category. But, the overall withdrawal rate is still higher for males. (The Female withdrawal rate drops below 60% far before Male withdrawal rates)
 
 Withdrawal Rates after 3 years:
 ![Withdrawal Rates 2 years](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/withdrawal_3years.png)
