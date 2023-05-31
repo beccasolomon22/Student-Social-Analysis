@@ -9,6 +9,16 @@ Collaborators: Sabrina Fernandez, Brennan Copp, Rebecca Solomon
 2. Faculty Demographics
 3. Financial Aid
 
+## Table of Contents
+1. Motivation
+2. Tools Used
+3. Methodology
+4. Findings
+5. Conclusion
+6. Acknowledgements
+7. Future Work
+8. Data Sources
+
 ## Motivation
 Higher education plays a crucial role in shaping individuals' lives and can have far-reaching social implications. By examining graduation and withdrawal rates, we aim to shed light on the disparities and challenges faced by different gender and ethnic groups in college settings. Understanding these social impacts is essential for promoting equity and inclusivity in higher education.
 
