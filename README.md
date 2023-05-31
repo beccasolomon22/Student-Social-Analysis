@@ -66,6 +66,18 @@ Same Ethnicity for Both Students and Faculty          |   Students of all Ethnit
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
 ![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png) |  ![stu ai fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_ai_fac_white.png)
 
+The first comparisons we did were on the graduation rates of students compared to the representation of the same ethnicity in each school. The results we got were surprising. In every case there was not a significant correlation between the two values with all the r squared values being below .4. Along with this, the slopes of the linear regression lines vary between positive and negative across the board. However, despite these finding we did notice a trend. When it came to faculty demographics, white faculty demographics seem to be farther to the right (between 50-100% representation) whereas every other faculty demographic was far to the left (0-20% respresentation). 
+
+From this discovery, we then took a look at comparing all student demographic graduation rates to just the percentage of white faculty. Immediately we saw a change in the overall results. Even though there was not a significant statistical correlation, there was a more obvious downward trend in almost all the graphs. In almost every student demographic we see that the less white faculty the higher the graduation rates. The only cases where we don't see this trend are the student demographic groups that have much lower numbers. 
+
+These two discoveries then led us to looking further into Faculty Demographics because we wanted to understand why the first set of graphs leaned so far to either side. 
+
+![avg faculty demo bar](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo.png)
+
+Faculty Demographics         |   US Population
+:-----------------------------------------------------------------:|:-----------------------------------------------------------------:
+![faculty](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo_pie.png) | ![us population](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/Visualizing-US-Population-by-Race.jpg)
+
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among different gender and ethnic groups, which can indicate barriers or difficulties faced by specific demographics.
 
