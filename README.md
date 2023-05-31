@@ -78,8 +78,7 @@ When we take a look at the average faculty demographics across all school in the
 
 How does the respresentations of different demographics in schools compare to that of the US population as a whole?
 
-Faculty Demographics         |   US Population
-:-----------------------------------------------------------------:|:-----------------------------------------------------------------:
+#### Faculty Demographics   VS   US Population
 ![faculty vs us](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/faculty_vs_us_pop.png)
 
 ### Withdrawal Rates: 
