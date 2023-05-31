@@ -76,7 +76,7 @@ These two discoveries then led us to looking further into Faculty Demographics b
 
 Faculty Demographics         |   US Population
 :-----------------------------------------------------------------:|:-----------------------------------------------------------------:
-![faculty](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo_pie.png | width=100) | ![us population](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/Visualizing-US-Population-by-Race.jpg | width=100)
+![faculty](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/avg_fac_demo_pie.png =250x250) | ![us population](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/Visualizing-US-Population-by-Race.jpg =250x250)
 
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among different gender and ethnic groups, which can indicate barriers or difficulties faced by specific demographics.
