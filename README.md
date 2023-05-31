@@ -43,7 +43,22 @@ Our analysis revealed several significant findings:
 
 ### Graduation Rates:
 We found variations in graduation rates across different gender and ethnic groups. These differences provide insights into the challenges and successes experienced by various student populations.
+ 
+#### Graduation Rate Per Ethnicity VS Faculty Demographic
 
+![stu_fac_white](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_white.png)
+
+![stu_fac_2](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_2.png)
+
+![stu_fac_hapac](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_hp.png)
+
+![stu_fac_his](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_his.png)
+
+![stu_fac_black](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_black.png)
+
+![stu_fac_asian](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_asian.png)
+
+![stu_fac_ai](https://github.com/beccasolomon22/Student-Social-Analysis/blob/main/images/stud_fac_ai.png)
 
 ### Withdrawal Rates: 
 The analysis also highlighted variations in withdrawal rates among different gender and ethnic groups, which can indicate barriers or difficulties faced by specific demographics.
@@ -68,4 +83,4 @@ We welcome contributions and collaborations to expand the scope of this project 
 We utilized the US Department of Education's API to access a comprehensive dataset on college students' outcomes. This API provides detailed information on graduation rates, withdrawal rates, as well as demographic data for students across various universities in the United States. Additional research was gathered from other sources.
 
 ### Links
-
+[]()
