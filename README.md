@@ -12,6 +12,22 @@ Collaborators: Sabrina Fernandez, Brennan Copp, Rebecca Solomon
 ## Motivation
 Higher education plays a crucial role in shaping individuals' lives and can have far-reaching social implications. By examining graduation and withdrawal rates, we aim to shed light on the disparities and challenges faced by different gender and ethnic groups in college settings. Understanding these social impacts is essential for promoting equity and inclusivity in higher education.
 
+## Tools Used
+1. Jupyter Notebook:
+    - Python/Pandas/Matplotlib
+    - API calls
+    - Data Cleaning
+    - Some visualizations
+
+2. Javascript/HTML/CSS
+    - Interactive visualizations
+    - Webpage design
+    - Styling
+
+3. PGAdmin 4
+    - Build Database
+    - Store data tables
+    - Query from the Database
 
 ## Methodology
 ### Our analysis involved the following steps:
@@ -19,7 +35,7 @@ Higher education plays a crucial role in shaping individuals' lives and can have
 1. Data Retrieval: We obtained relevant data from the US Department of Education's API, focusing on graduation rates, withdrawal rates, gender, and ethnicity.
 2. Data Preprocessing: The retrieved data was cleaned, standardized, and processed to ensure consistency and accuracy.
 3. Exploratory Data Analysis: We conducted exploratory analysis to gain insights into the overall trends and patterns in graduation and withdrawal rates among different gender and ethnic groups.
-4. Statistical Analysis: We performed statistical tests and calculations to determine significant differences in graduation and withdrawal rates between gender and ethnic groups.
+4. Statistical Analysis: We performed statistical tests and calculations to determine significant differences in graduation rates by student demographic and overall faculty diversity as well as withdrawal rates and average debt between gender groups.
 5. Visualization: The results were visualized using appropriate graphs, charts, and statistical visualizations to enhance understanding and interpretation.
 
 ## Findings
@@ -27,8 +43,6 @@ Our analysis revealed several significant findings:
 
 ### Graduation Rates:
 We found variations in graduation rates across different gender and ethnic groups. These differences provide insights into the challenges and successes experienced by various student populations.
-
-
 
 
 ### Withdrawal Rates: 
